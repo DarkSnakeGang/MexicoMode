@@ -11,11 +11,7 @@ if(window.snake)snake.mexico_mode = function() {
       
       eval(
           code.replace(
-            `this.Pb = [];`
-          )
-        );
-      eval(
-          code.replace(
+            `this.Pb = [];`,
             `        this.Pb = [
 
                 {
