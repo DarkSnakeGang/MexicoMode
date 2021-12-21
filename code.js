@@ -13,7 +13,6 @@ if(window.snake)snake.mexico_mode = function() {
           code.replace(
             `this.Pb = [];`,
             `        this.Pb = [
-
                 {
                     "Gm": false,
                     "Iy": -1,
