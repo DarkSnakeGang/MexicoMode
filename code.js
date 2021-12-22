@@ -8,9 +8,10 @@ if(window.snake)snake.mexico_mode = function() {
       req.onload = function() {
         const code = this.responseText;
         if(code.indexOf('trophy') === -1)return;
-      
+        var result = code.match(/s_a\(\"pKhWu\"\)\;[^]*{return this\.yjd}\);s_R\(s_gxa,s_JD\)\;/)
+        var resultString = `${result.join}`;
       eval(
-          code.replace(
+          resultString.replace(
             `this.Pb = [];`,
             `        this.Pb = [
                 {
@@ -34,6 +35,7 @@ if(window.snake)snake.mexico_mode = function() {
             ];`
           )
         );
+        
       };
       req.send();
     }
