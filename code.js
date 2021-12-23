@@ -1,4 +1,4 @@
-if(window.snake)snake.wall_every_apple = function() {
+if(window.snake)snake.mexico_mode = function() {
   const scripts = document.getElementsByTagName('script');
   for(let script of scripts) {
     if(script.src === '' || script.src.includes('apis.google.com'))continue;
